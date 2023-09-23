@@ -8,7 +8,7 @@
             <name>Matti Tiainen</name>
             <email>mvtiaine@cc.hut.fi</email>
         </owner>
-        <source type="git">git://github.com/mvtiaine/gentoo-overlay.git</source>
+        <source type="git">https://github.com/mvtiaine/gentoo-overlay.git</source>
         <feed>https://github.com/mvtiaine/gentoo-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
