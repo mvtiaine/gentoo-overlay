@@ -17,3 +17,5 @@ RDEPEND="${DEPEND}"
 BDEPEND="
 	virtual/pkgconfig
 "
+
+DOCS=( AUTHORS README ChangeLog COPYING NOTICE VERSION )
