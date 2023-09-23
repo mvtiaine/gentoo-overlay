@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>mvtiaine</name>
+      <description lang="en">Gentoo overlay for audacious-uade.</description>
+        <homepage>https://github.com/mvtiaine/gentoo-overlay</homepage>
+        <owner type="person">
+            <name>Matti Tiainen</name>
+            <email>mvtiaine@cc.hut.fi</email>
+        </owner>
+        <source type="git">git://github.com/mvtiaine/gentoo-overlay.git</source>
+        <feed>https://github.com/mvtiaine/gentoo-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
