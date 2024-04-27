@@ -11,7 +11,6 @@ IUSE=""
 
 DEPEND="
 	media-sound/audacious
-	dev-libs/libbsd
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
