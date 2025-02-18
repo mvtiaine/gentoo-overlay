@@ -10,7 +10,7 @@ if [[ ${PV} == *9999* ]]; then
 	SRC_URI=""
 else
 	SRC_URI="https://github.com/mvtiaine/${PN}/releases/download/${PV}/${PN}-${PV}.tar.bz2"
-	KEYWORDS="~amd64 ~arm64 ~m68k ~ppc64 ~x86"
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sh ~sparc ~x86"
 fi
 
 LICENSE="GPL-2+"
@@ -18,13 +18,15 @@ SLOT="0"
 IUSE=""
 DEPEND="
 	media-sound/audacious
+	media-libs/libopenmpt
+	media-libs/libxmp
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
 	virtual/pkgconfig
 "
 
-DOCS=( AUTHORS README ChangeLog COPYING NOTICE VERSION )
+DOCS=( AUTHORS README ChangeLog COPYING COPYING.LGPL NOTICE VERSION )
 
 src_prepare() {
 	default
@@ -32,5 +34,5 @@ src_prepare() {
 }
 
 src_configure() {
-	econf --enable-plugin-audacious=yes --with-static-stdlibs=no
+	econf --enable-players=all --enable-plugin-audacious=yes --with-static-stdlibs=no
 }
