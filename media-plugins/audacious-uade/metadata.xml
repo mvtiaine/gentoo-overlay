@@ -6,7 +6,7 @@
     <name>Matti Tiainen</name>
   </maintainer>
   <longdescription lang="en">
-    UADE plugin for Audacious media player
+    Audacious (https://audacious-media-player.org/) and DeaDBeeF (https://deadbeef.sourceforge.io/) input plugin for UADE (https://zakalwe.fi/uade/) and other retro music replays
   </longdescription>
   <upstream>
     <remote-id type="github">mvtiaine/audacious-uade</remote-id>

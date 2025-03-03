@@ -40,10 +40,10 @@ src_configure() {
 	local myconf
 
 	myconf+=" --with-static-stdlibs=no"
-	myconf+=" --enable-plugin-audacious=$(usex audacious)"
-	myconf+=" --enable-plugin-deadbeef=$(usex deadbeef)"
+	myconf+=" --enable-plugin-audacious=$(usex audacious) "
+	myconf+=" --enable-plugin-deadbeef=$(usex deadbeef) "
 	# no pkg-config support for DeaDBeeF
-	myconf+=" --with-deadbeef-plugindir=${EPREFIX}/usr/$(get_libdir)/deadbeef"
+	myconf+=" --with-deadbeef-plugindir=${EPREFIX}/usr/$(get_libdir)/deadbeef "
 	if use openmpt && use libxmp ; then
 		myconf+=" --enable-players=all"
 	fi
