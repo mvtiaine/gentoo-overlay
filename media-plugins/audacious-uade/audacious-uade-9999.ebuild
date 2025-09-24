@@ -29,7 +29,7 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
-DOCS=( AUTHORS README ChangeLog COPYING COPYING.LGPL NOTICE VERSION )
+DOCS=( AUTHORS README.md ChangeLog COPYING COPYING.LGPL NOTICE VERSION )
 
 src_prepare() {
 	default
